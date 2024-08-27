@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Backend Developer</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Santiago Sosa</h1>
+                        <p>Backend Developer | Creating robust and scalable solutions</p>
+                    </div>
+                    <div class="hero-image">
+                        <img alt="Santiago Sosa, a professional backend developer with short dark hair and glasses, smiling confidently in a modern office setting" src="foto2.jpeg" width="200" height="200">
+                        <div class="social-icons">
+                            <a href="https://github.com/santiagososahn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://youtube.com/c/johndoe" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>E-commerce API</h3>
+                        <p>Developed a high-performance RESTful API for an e-commerce platform using Node.js and Express.</p>
+                        <a href="https://github.com/johndoe/ecommerce-api" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Data Processing Pipeline</h3>
+                        <p>Built a scalable data processing pipeline using Python and Apache Kafka for real-time analytics.</p>
+                        <a href="https://github.com/johndoe/data-pipeline" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Microservices Architecture</h3>
+                        <p>Designed and implemented a microservices-based system using Docker and Kubernetes.</p>
+                        <a href="https://github.com/johndoe/microservices-demo" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-microsoft"></i>
+                        <h3>.NET</h3>
+                        <p>Proficient in C# and ASP.NET Core for building scalable web applications and APIs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <p>Experienced in Python for data processing, machine learning, and backend development.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL</h3>
+                        <p>Expert in SQL database design, optimization, and management across various RDBMS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
