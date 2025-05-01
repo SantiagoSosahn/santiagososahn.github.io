@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Backend Developer</title>
+    <title>Santiago Sosa | Backend Developer</title>
+    <meta name="description" content="Portfolio profesional de Santiago Sosa, Backend Developer especializado en soluciones escalables">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
                 <ul>
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -22,85 +24,154 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero section">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Santiago Sosa</h1>
-                        <p>Backend Developer | Creating robust and scalable solutions</p>
-                    </div>
-                    <div class="hero-image">
-                        <img alt="Santiago Sosa, a professional backend developer with short dark hair and glasses, smiling confidently in a modern office setting" src="foto2.jpeg" width="200" height="200">
+                        <h1>Santiago Sosa <span>FullStack Developer</span></h1>
+                        <p>Creando soluciones robustas y escalables con tecnología de vanguardia</p>
+                        <div class="btn-container">
+                            <a href="#projects" class="btn">Ver Proyectos</a>
+                            <a href="#contact" class="btn btn-outline">Contactarme</a>
+                        </div>
                         <div class="social-icons">
-                            <a href="https://github.com/santiagososahn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <a href="https://github.com/santiagososahn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/santiagososahn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                                <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/santiagososahn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://youtube.com/c/johndoe" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
+                            <a href="https://youtube.com/c/johndoe" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="foto6.jpeg" alt="Santiago Sosa, Backend Developer profesional" width="400" height="400">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Proyectos Destacados</h2>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Data Warehouse Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Warehouse</h3>
+                            <p>Desarrollé un almacén de datos completo para análisis empresarial utilizando SQL Server y ETL processes.</p>
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>ETL</span>
+                                <span>Power BI</span>
+                            </div>
+                            <a href="https://github.com/santiagososahn/data-warehouse" class="btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog with Django">
+                        </div>
+                        <div class="project-info">
+                            <h3>Blog con Django</h3>
+                            <p>Plataforma de blogging completa con autenticación, CRUD y sistema de comentarios.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/santiagososahn/django-blog" class="btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Análisis de datos con Power BI">
+                        </div>
+                        <div class="project-info">
+                            <h3>Análisis de datos con Power BI</h3>
+                            <p>Dashboard interactivo para visualización de datos empresariales con conexión a múltiples fuentes.</p>
+                            <div class="project-tags">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="https://github.com/santiagososahn/powerbi-dashboards" class="btn">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="skills" class="skills section">
             <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Data Warehouse</h3>
-                        <p>Developed a high-performance RESTful API for an e-commerce platform using Node.js and Express.</p>
-                        <a href="https://github.com/johndoe/ecommerce-api" class="btn">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Blog with Django</h3>
-                        <p>Built a scalable data processing pipeline using Python and Apache Kafka for real-time analytics.</p>
-                        <a href="https://github.com/johndoe/data-pipeline" class="btn">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Análisis de datos con Power BI</h3>
-                        <p>Designed and implemented a microservices-based system using Docker and Kubernetes.</p>
-                        <a href="https://github.com/johndoe/microservices-demo" class="btn">View Project</a>
-                    </div>
+                <div class="section-title">
+                    <h2>Mis Habilidades</h2>
                 </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <i class="fab fa-microsoft"></i>
-                        <h3>.NET</h3>
-                        <p>Proficient in C# and ASP.NET Core for building scalable web applications and APIs.</p>
+                        <h3>.NET Ecosystem</h3>
+                        <p>Experiencia en desarrollo con C#, ASP.NET Core, Entity Framework y arquitecturas limpias.</p>
                     </div>
                     <div class="skill-card">
                         <i class="fab fa-python"></i>
                         <h3>Python</h3>
-                        <p>Experienced in Python for data processing, machine learning, and backend development.</p>
+                        <p>Desarrollo backend con Django/Flask, scripting, automatización y análisis de datos.</p>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-database"></i>
-                        <h3>SQL</h3>
-                        <p>Expert in SQL database design, optimization, and management across various RDBMS.</p>
+                        <h3>Bases de Datos</h3>
+                        <p>SQL Server, PostgreSQL, MySQL, diseño de esquemas y optimización de queries.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3>DevOps</h3>
+                        <p>Docker, CI/CD, Azure DevOps, despliegues en la nube y automatización.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Análisis de Datos</h3>
+                        <p>Power BI, ETL, Python (Pandas, NumPy) y visualización de datos.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Metodologías Ágiles</h3>
+                        <p>Scrum, Kanban, gestión de proyectos y trabajo en equipos multidisciplinarios.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact section">
             <div class="container">
-                <h2>Contact Me</h2>
+                <div class="section-title">
+                    <h2>Contacto</h2>
+                </div>
                 <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
@@ -108,10 +179,52 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Santiago Sosa. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#home">Inicio</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/santiagososahn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/santiagososahn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://youtube.com/c/johndoe" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2024 Santiago Sosa. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Efecto de scroll para el header
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling para los links del menú
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
